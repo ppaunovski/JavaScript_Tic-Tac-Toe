@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.game-wrapper{
+    margin: 50px auto;
+}
+
+.board-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.board-grid > button{
+    height: 100px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: solid 2px black;
+}
+
+.board-grid > button:nth-child(1){
+    border-left: none;
+    border-top: none;
+}
+
+.board-grid > button:nth-child(2){
+    border-top: none;
+}
+
+.board-grid > button:nth-child(3){
+    border-right: none;
+    border-top: none;
+}
+
+.board-grid > button:nth-child(4){
+    border-left: none;
+}
+
+.board-grid > button:nth-child(6){
+    border-right: none;
+}
+
+.board-grid > button:nth-child(7){
+    border-left: none;
+    border-bottom: none;
+}
+
+.board-grid > button:nth-child(8){
+    border-bottom: none;
+}
+
+.board-grid > button:nth-child(9){
+    border-right: none;
+    border-bottom: none;
+}
+
+.result{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+}
+
+.result > div{
+    width: 150px;
+    background-color: gainsboro;
+    text-align: center;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.reset-wrap{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.reset{
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 20px;
+}
